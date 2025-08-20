@@ -12,7 +12,7 @@ const ItemDetail = () => {
   const item = items.find((item) => item.id === parseInt(id));
 
   if (!item) {
-    return <h2>Item not found</h2>;
+    return <div>Item not found</div>;
   }
 
   return (
