@@ -9,7 +9,7 @@ const items = [
 
 const ItemDetail = () => {
   const { id } = useParams();
-  const item = items.find((item) => item.id.toString() === id);
+  const item = items.find((item) => item.id === parseInt(id));
 
   if (!item) {
     return <h2>Item not found</h2>;
